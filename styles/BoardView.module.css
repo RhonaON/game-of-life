@@ -1,0 +1,22 @@
+.board {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+}
+
+.cell-is-alive {
+  background-color: black;
+}
+
+.cell-is-dead {
+  background-color: white;
+}

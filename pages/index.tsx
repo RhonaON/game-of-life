@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 
 import { Board } from '../types'
 import { generateRandomBoard } from '../helpers'
+import { BoardView } from '../components/BoardView'
 
 const Home: NextPage = () => {
   const [board, setBoard] = useState<Board>(() => generateRandomBoard([10, 10]))
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to the game of life!</h1>
+        <BoardView board={board} />
       </main>
     </div>
   )
